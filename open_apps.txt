@@ -1,0 +1,65 @@
+Sub OpenEdge()
+    ' Define the path to Microsoft Edge executable
+    Dim edgePath As String
+    edgePath = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" ' Update this path to match your Edge installation path
+    
+    ' Check if Edge executable exists
+    If Dir(edgePath) <> "" Then
+        ' Use the Shell function to open Edge
+        Shell edgePath, vbNormalFocus
+    Else
+        MsgBox "Microsoft Edge executable not found at the specified path."
+    End If
+End Sub
+Here's how to use this code:
+
+Open Excel.
+
+Press Alt + F11 to open the VBA editor.
+
+Insert a new module if you don't have one already by clicking on "Insert" > "Module."
+
+Paste the code above into the module.
+
+Modify the edgePath variable with the correct path to the Microsoft Edge executable on your computer.
+
+Close the VBA editor.
+
+You can run the OpenEdge macro by going back to Excel, press Alt + F8 to open the "Macro" dialog, select "OpenEdge," and click "Run."
+
+This VBA code will open Microsoft Edge when executed. Make sure to specify the correct path to the Edge executable in the edgePath variable.
+
+
+
+
+User
+i need a platform to share the code online public
+ChatGPT
+If you want to share your code online publicly, there are several platforms specifically designed for this purpose. Here are a few popular options:
+
+GitHub: GitHub is one of the most widely used platforms for sharing and collaborating on code. You can create repositories to host your code, and it provides version control using Git. Your code can be public or private, depending on your preference.
+
+GitLab: GitLab is similar to GitHub and offers both cloud-based and self-hosted options for hosting your code repositories. It provides features like issue tracking, continuous integration, and more.
+
+Bitbucket: Bitbucket is another platform for hosting Git repositories. It offers free private repositories for small teams and supports both Git and Mercurial.
+
+GitGud: GitGud is a simple and privacy-focused platform for hosting Git repositories. It's designed for sharing code publicly without the social features of GitHub.
+
+SourceForge: SourceForge is an older platform that provides version control, project management, and code hosting. It supports Git, SVN, and other version control systems.
+
+CodePen: CodePen is primarily for sharing front-end web development code, including HTML, CSS, and JavaScript. It's a great platform for showcasing web projects and experimenting with code.
+
+JSFiddle: Similar to CodePen, JSFiddle is designed for sharing and testing JavaScript, HTML, and CSS code snippets. It's especially useful for web developers.
+
+Pastebin: While Pastebin is not primarily a code hosting platform, it's commonly used to share code snippets and text publicly. It's simple and doesn't require an account.
+
+Repl.it: Repl.it allows you to write, run, and share code in various programming languages. You can create and share projects with others.
+
+Dev.to: Dev.to is a social platform for programmers and developers. While it's primarily for sharing articles and discussions, you can also share code snippets and projects.
+
+Choose the platform that best suits your needs based on the programming languages you work with, whether you want public or private repositories, and any additional features you require, such as issue tracking or collaboration tools.
+
+
+
+
+
